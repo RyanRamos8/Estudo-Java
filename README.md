@@ -1,3 +1,3 @@
 # Estudo-Java
 
-Repositório feito para publicar o que aprendo em java.
+Projetos, exercícios e códigos desenvolvidos durante meus estudos práticos em Java e POO. ☕💻
