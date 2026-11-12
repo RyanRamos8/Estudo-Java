@@ -1,12 +1,4 @@
-// Objetivo -> Fazer um programa/ Calculadora
 
-// O usuario debe digitar até 2 numeros (Scanner)
-
-// E deverá escoher até 6 opções, sendo 5 de operações básicas e a 6 sendo de sair
-
-// Após tudo isso o programa deverá mostrar a seguinte mensagem:
-
-// O resultado da conta e´: ex : 10
 
 import java.util.*;
 
