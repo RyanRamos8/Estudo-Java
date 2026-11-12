@@ -1,4 +1,12 @@
+// Objetivo -> Fazer um programa/ Calculadora
 
+// O usuario debe digitar até 2 numeros (Scanner)
+
+// E deverá escoher até 6 opções, sendo 5 de operações básicas e a 6 sendo de sair
+
+// Após tudo isso o programa deverá mostrar a seguinte mensagem:
+
+// O resultado da conta e´: ex : 10
 
 import java.util.*;
 
@@ -7,10 +15,9 @@ class Calculadora {
 
         Scanner sc = new Scanner(System.in);
 
-        int contador = 0;
 
-        while (contador < 6) {
 
+        while (true){
             System.out.println("Escolha a operação que voce quer fazer!");
 
             System.out.println("1 - Adição");
@@ -24,6 +31,12 @@ class Calculadora {
             if (opcao == 6) {
                 System.out.println("Saindo...");
                 break;
+            }
+
+            if (opcao < 1 || opcao > 6){
+
+                System.out.println("Opção inválida");
+                continue;
             }
 
             System.out.println("Digite um numero:");
@@ -49,16 +62,21 @@ class Calculadora {
                 System.out.println("Resultado da conta " + num1 + " * " + num2 + " = " + multiplicando);
 
             } else if (opcao == 4) {
-                int dividindo = num1 / num2;
-                System.out.println("Resultado da conta " + num1 + " / " + num2 + " = " + dividindo);
-
+                if (num2!= 0) {
+                    int dividindo = num1 / num2;
+                    System.out.println("Resultado da conta " + num1 + " / " + num2 + " = " + dividindo);
+                } else {
+                    System.out.println("Não é possível fazer divisão por 0!");
+                }
             } else if (opcao == 5) {
                 if (num2 != 0) {
                 int resto = num1 % num2;
                     System.out.println("Resultado da conta " + num1 + " % " + num2 + " = " + resto);
-
+                } else {
+                    System.out.println("Não é possível fazer divisão por 0!");
                 }
-            }  else  {
+
+                }  else  {
                 System.out.println("Erro");
             }
         } sc.close();
